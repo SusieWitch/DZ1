@@ -1,7 +1,10 @@
 <?php
 $today = date("dm");
-$min = date("i");
-for($i=0;$i<$min;$i++) {
+$min = (intval(date("i")))+10;
+$myarray = array();
+$array1 = array();
+$array2 = array();
+for($i=1;$i<$min;$i++) {
     $myarray[$i] = $today+$min*$i;
 };
 $count=count($myarray);
